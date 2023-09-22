@@ -1,3 +1,5 @@
+//eg/2020/3974 ISANKA J.R.A.U.
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -5,15 +7,19 @@ import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.Map;
 
-public class TravelCostCalculator {
+public class TravelCostCalculator 
+{
+    
     static Map<String, Double> a = new HashMap<>();
     static Map<String, Double> b = new HashMap<>();
     static Map<String, Double> c = new HashMap<>();
 
     static void l1(String file) throws IOException {
+        
         BufferedReader reader = new BufferedReader(new FileReader(file));
         String i; 
         while ((i = reader.readLine()) != null) {
+            
             String[] p = i.split(",");
             a.put(p[0].toUpperCase(), Double.parseDouble(p[1]));
         }
@@ -29,6 +35,7 @@ public class TravelCostCalculator {
     }
 
     static void l3(String file) throws IOException {
+        
         BufferedReader reader = new BufferedReader(new FileReader(file));
         String i;
         while ((i = reader.readLine()) != null) {
