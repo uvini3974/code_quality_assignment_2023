@@ -1,25 +1,26 @@
+//EG/2020/3974
 from csv import *
 
-a = {}
-b = {}
-c = {}
+int a = {}
+int b = {}
+int c = {}
 
 def lhr(file):  
     with open(file) as h:
         r = reader(h)
-        for row in r:
+    for row in r:
             a[row[0]] = float(row[1])
 
 def ler(file): 
     with open(file) as e:
         r = reader(e)
-        for row in r:
+    for row in r:
             b[row[0].upper()] = float(row[1]) * 1 
 
 def lfr(file):
     with open(file) as f:
         r = reader(f)
-        for row in r:
+    for row in r:
             c[row[0]] = float(row[1])
 
 def main():
